@@ -1,7 +1,9 @@
 pipeline {
     stages {
-        stage('build') {
-           sh "echo 'shell scripts to build project...' > text.txt" 
+       stage('build') {
+            steps {
+                sh "echo 'shell scripts to build project...' > text.txt" 
+            }
         }
     }
 }    
